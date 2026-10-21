@@ -1,0 +1,339 @@
+{
+  "home": {
+    "kicker": "Mickaëlle Vallé",
+    "title": "Psychomotricité et psychologie",
+    "lead": "Un espace dédié à la psychomotricité, la sensori-motricité et la psychologie, pour les tout-petits, les enfants, les adolescents et les adultes.",
+    "domains": [
+      {
+        "title": "Psychomotricité",
+        "text": "Bilan psychomoteur, thérapie psychomotrice, relaxation thérapeutique.",
+        "href": "accompagnements.html#psychomotricite"
+      },
+      {
+        "title": "Psychologie",
+        "text": "Séances individuelles, bilans et accompagnement psychologique.",
+        "href": "accompagnements.html#psychologie"
+      },
+      {
+        "title": "Sensori-motricité",
+        "text": "Bilan sensori-moteur selon l'approche d'A. Bullinger.",
+        "href": "accompagnements.html#sensori-motricite"
+      },
+      {
+        "title": "Médiations spécifiques",
+        "text": "Groupes à médiation, approche ABA et guidance parentale.",
+        "href": "accompagnements.html#mediations"
+      }
+    ]
+  },
+  "about": {
+    "kicker": "À propos",
+    "name": "Mickaëlle Vallé",
+    "role": "Psychomotricienne D.E. et psychologue clinicienne psychothérapeute",
+    "intro": "Spécialisée dans les troubles du spectre autistique (TSA) et les troubles du neuro-développement (TND), j'accompagne les tout-petits et leurs parents, les enfants d'âge scolaire, les adolescents et les adultes, en thérapie comme en évaluation.",
+    "timeline": [
+      {
+        "label": "2013",
+        "h": "Création du cabinet Colibri",
+        "p": "Ouverture du cabinet au 20 rue du Moulinet, Paris 13e, un lieu de thérapie et d'évaluation."
+      },
+      {
+        "label": "Formations",
+        "h": "Psychomotricité et psychologie",
+        "p": "Psychomotricienne D.E., psychologue clinicienne, formation de psychothérapeute AFPPEA."
+      },
+      {
+        "label": "Approches",
+        "h": "Bullinger, Bergès et ABA",
+        "p": "Approche sensori-motrice Bullinger, relaxation thérapeutique Bergès, et travail de guidance parentale avec une intervenante ABA."
+      },
+      {
+        "label": "Réseaux",
+        "h": "Un travail en lien avec les partenaires de soins",
+        "p": "Partenaire de la Plateforme de Coordination et d'Orientation de Paris (PCO 75), membre de l'AFPL et de l'association des praticiens du bilan sensori-moteur (ABSM)."
+      },
+      {
+        "label": "Aujourd'hui",
+        "h": "Deux lieux d'exercice",
+        "p": "Une pratique répartie entre le 20 rue du Moulinet et la MSP Riboulet, à Paris 13e."
+      }
+    ],
+    "tags": [
+      "TSA et TND",
+      "Bilan psychomoteur",
+      "Bilan sensori-moteur",
+      "Relaxation Bergès",
+      "Guidance parentale",
+      "Médiations de groupe"
+    ]
+  },
+  "accompagnements": [
+    {
+      "id": "psychomotricite",
+      "title": "Psychomotricité",
+      "intro": "La psychomotricité est une thérapie à médiation corporelle. Le psychomotricien intervient sur les fonctions motrices, psychiques, cognitives et sensorielles afin d'améliorer les relations que la personne entretient avec elle-même et son environnement. Il travaille sur prescription médicale et est tenu au secret professionnel.",
+      "blocks": [
+        {
+          "h": "Bilan psychomoteur",
+          "p": "Outil d'évaluation du développement psychomoteur de l'enfant, qui tient compte de la dimension affective, cognitive et langagière. Avant 3 ans, l'examen évalue la vigilance, le tonus et les acquisitions motrices et posturales. Après 3 ans, il évalue l'interaction entre perception, motricité, sensibilité et cognition. Au terme du bilan, l'intérêt d'une thérapie ou d'une autre mesure de soutien est indiqué aux parents."
+        },
+        {
+          "h": "Thérapie psychomotrice",
+          "p": "Particulièrement indiquée lorsque la dimension affective ou relationnelle domine dans l'installation du trouble psychomoteur (angoisse, troubles tonico-émotionnels, hyperactivité, inhibition, agressivité). Techniques de relaxation, éducation gestuelle, expression corporelle ou plastique, activités rythmiques, jeux, équilibration et coordination."
+        },
+        {
+          "h": "Relaxation thérapeutique",
+          "p": "Relaxation thérapeutique selon la méthode Bergès, en séances individuelles ou en groupe."
+        },
+        {
+          "h": "Indications",
+          "list": [
+            "Retard du développement psychomoteur",
+            "Maladresse motrice et gestuelle, dyspraxies",
+            "Trouble du schéma corporel",
+            "Inhibition ou instabilité psychomotrice",
+            "Troubles de la régulation tonique et tonico-émotionnels",
+            "Troubles de la latéralité et de l'organisation spatio-temporelle",
+            "Troubles de la graphomotricité et des apprentissages",
+            "Handicap moteur, mental, neurologique et génétique"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psychologie",
+      "title": "Psychologie",
+      "quote": "De tous les outils dont le psychologue dispose, il n'en est pas de plus valable que lui-même. (Didier Anzieu)",
+      "intro": "Séances individuelles et accompagnement psychologique dans une approche clinique bienveillante, dans le respect de la déontologie.",
+      "blocks": [
+        {
+          "h": "Examen et bilan psychologique",
+          "p": "L'examen psychologique s'adresse aux enfants de 6 à 16 ans. Il associe des tests scientifiquement validés pour apprécier le fonctionnement intellectuel et comprendre la personnalité et le fonctionnement psycho-affectif de l'enfant, afin de proposer une prise en charge adaptée à sa singularité."
+        },
+        {
+          "h": "Bilans proposés",
+          "list": [
+            "Bilans TSA (ADI-R, ADOS 2, CARS, Vineland, PEP 3, profil sensoriel)",
+            "Bilans des troubles des apprentissages (WISC 5, WIPPSI 4, NEPSY 2, fonctions exécutives et attentionnelles)",
+            "Évaluation cognitive (WIPPSI 4, WISC 5, WAIS 4)",
+            "Questionnaires de dépistage : attention, dépression, anxiété, stress post-traumatique, burn-out"
+          ]
+        },
+        {
+          "h": "Indications de psychothérapie",
+          "list": [
+            "Troubles anxieux et dépressifs",
+            "Psycho-trauma, deuil, séparation",
+            "TSA, troubles de la personnalité, troubles des apprentissages",
+            "Parentalité, addiction aux écrans, décrochage scolaire",
+            "Phobie, inhibition, gestion des émotions, burn-out"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sensori-motricite",
+      "title": "Sensori-motricité",
+      "quote": "Le développement de l'enfant est un processus et non un état. (A. Bullinger)",
+      "intro": "Les difficultés sensori-motrices peuvent entraîner des perturbations importantes dans le développement (régulation tonique, relation, organisation spatiale). Cette approche donne lieu à un bilan sensori-moteur.",
+      "blocks": [
+        {
+          "h": "Bilan sensori-moteur",
+          "p": "Il aide à comprendre les processus de développement, les modes d'organisation et les potentialités d'une personne. C'est un outil complémentaire des outils traditionnels d'évaluation clinique."
+        },
+        {
+          "h": "Domaines explorés",
+          "list": [
+            "Organisation des systèmes sensori-moteurs et sensoriels",
+            "Régulation tonique",
+            "Graphomotricité et motricité globale",
+            "Représentation de l'organisme",
+            "Oralité",
+            "Organisation praxique, spatiale et posturale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mediations",
+      "title": "Médiations spécifiques",
+      "intro": "Des groupes et des ateliers pour accompagner l'enfant et sa famille.",
+      "blocks": [
+        {
+          "h": "Groupes à médiation",
+          "list": [
+            "Groupe de relaxation thérapeutique Bergès",
+            "Groupe contes (4 enfants)",
+            "Groupe habiletés sociales (4 enfants)"
+          ]
+        },
+        {
+          "h": "Approche ABA et guidance parentale",
+          "p": "Atelier de deux heures pour un groupe de 6 parents maximum, animé par une intervenante ABA : outils visuels, emploi du temps, communication alternative, autonomie, motivation, économie de jetons, gestion des comportements problématiques. Cycle de 5 séances."
+        },
+        {
+          "h": "Psychomotricité et guidance parentale",
+          "p": "Pour le bébé, le très jeune enfant et ses parents : repérage et évaluation précoce des difficultés, soutien du développement sensori-moteur et des interactions parents-enfants, en s'appuyant sur le dialogue tonique, le toucher, le portage et le jeu."
+        }
+      ]
+    }
+  ],
+  "practical": {
+    "title": "Infos pratiques",
+    "lead": "De la prescription aux séances : comment se passe la prise en charge.",
+    "steps": [
+      {
+        "label": "Étape 1",
+        "h": "Consulter votre médecin",
+        "p": "La prise en charge en psychomotricité se fait sur prescription médicale. Votre médecin vous prescrit une ordonnance pour un bilan psychomoteur, puis pour des séances si nécessaire."
+      },
+      {
+        "label": "Étape 2",
+        "h": "Prendre rendez-vous",
+        "p": "Vous réservez en ligne sur Doctolib, ou en me contactant par téléphone ou par email."
+      },
+      {
+        "label": "Étape 3",
+        "h": "Le bilan",
+        "p": "Le bilan permet d'évaluer le développement et d'élaborer un projet thérapeutique. À son terme, l'intérêt d'une thérapie ou d'une autre mesure de soutien est indiqué aux parents."
+      },
+      {
+        "label": "Étape 4",
+        "h": "Les séances",
+        "p": "Techniques de relaxation, éducation gestuelle, expression corporelle ou plastique, activités rythmiques, jeux, équilibration et coordination."
+      }
+    ],
+    "notes": [
+      {
+        "h": "Remboursement",
+        "p": "Les séances ne sont pas prises en charge par la CPAM. Un devis peut être adressé à votre mutuelle pour des soins spécifiques ou coûteux."
+      },
+      {
+        "h": "Secret professionnel",
+        "p": "Tous les échanges sont couverts par le secret professionnel. Des liens avec vos autres partenaires de soins et d'éducation peuvent s'inscrire dans le projet de soin, avec votre accord."
+      }
+    ]
+  },
+  "legal": {
+    "title": "Mentions légales et protection des données",
+    "updated": "Octobre 2026",
+    "sections": [
+      {
+        "id": "editeur",
+        "h": "Éditeur du site",
+        "b": [
+          {
+            "t": "p",
+            "x": "Le site est édité par Mickaëlle Vallé, psychomotricienne D.E. et psychologue clinicienne exerçant en libéral."
+          },
+          {
+            "t": "ul",
+            "x": [
+              "Adresse professionnelle : {{à compléter}}",
+              "SIRET : {{à compléter}}",
+              "Téléphone : 06 81 89 29 40",
+              "Email : valle.micka@gmail.com",
+              "Directrice de la publication : Mickaëlle Vallé"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hebergeur",
+        "h": "Hébergeur",
+        "b": [
+          {
+            "t": "p",
+            "x": "Le site est hébergé par {{nom, adresse et contact de l'hébergeur à compléter (Netlify ou Cloudflare Pages)}}."
+          }
+        ]
+      },
+      {
+        "id": "titres",
+        "h": "Titres professionnels et déontologie",
+        "b": [
+          {
+            "t": "ul",
+            "x": [
+              "Psychomotricienne : diplôme d'État, numéro RPPS 1007274060.",
+              "Psychologue clinicienne : numéro ADELI / RPPS 759378474. Le titre de psychologue est protégé par la loi.",
+              "Pays d'obtention des titres : {{France, à confirmer avec l'établissement de délivrance}}."
+            ]
+          },
+          {
+            "t": "p",
+            "x": "Les psychologues exercent dans le respect du Code de déontologie des psychologues, et tous les échanges sont couverts par le secret professionnel."
+          }
+        ]
+      },
+      {
+        "id": "donnees",
+        "h": "Données personnelles (RGPD)",
+        "b": [
+          {
+            "t": "p",
+            "x": "Responsable du traitement : Mickaëlle Vallé, contact : valle.micka@gmail.com."
+          },
+          {
+            "t": "p",
+            "x": "Les seules données collectées via ce site sont celles que vous saisissez dans le formulaire de contact (nom, email, téléphone facultatif, message). Elles servent uniquement à répondre à votre demande, sur la base de votre consentement. Elles ne sont ni vendues ni transmises à des tiers."
+          },
+          {
+            "t": "p",
+            "x": "Le formulaire n'est pas destiné à transmettre des données de santé : merci de ne pas y détailler de situation médicale. Durée de conservation : {{à confirmer, par exemple 3 ans maximum après le dernier échange}}."
+          },
+          {
+            "t": "p",
+            "x": "Vous disposez d'un droit d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité de vos données. Pour l'exercer, écrivez à valle.micka@gmail.com. Vous pouvez aussi introduire une réclamation auprès de la CNIL (cnil.fr)."
+          }
+        ]
+      },
+      {
+        "id": "cookies",
+        "h": "Cookies et services tiers",
+        "b": [
+          {
+            "t": "p",
+            "x": "Le site n'utilise aucun cookie publicitaire ni outil de mesure d'audience. Certains contenus sont fournis par des services tiers qui peuvent déposer leurs propres cookies et recevoir votre adresse IP :"
+          },
+          {
+            "t": "ul",
+            "x": [
+              "Google Maps : cartes de la page Lieux.",
+              "Google Fonts : police de caractères du site.",
+              "Doctolib : prise de rendez-vous, sur le site de Doctolib après un clic."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "propriete",
+        "h": "Propriété intellectuelle et crédits",
+        "b": [
+          {
+            "t": "p",
+            "x": "Les textes et le graphisme du site sont la propriété de leur autrice. Toute reproduction sans accord préalable est interdite."
+          },
+          {
+            "t": "ul",
+            "x": [
+              "Vidéo de la page d'accueil : « Children Playing Together », Ron Lach, Pexels.",
+              "L'article « L'enfant et les écrans » est signé Anne Lefebvre, psychologue clinicienne.",
+              "Photographie de Mickaëlle Vallé : {{crédit à compléter}}."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "responsabilite",
+        "h": "Responsabilité",
+        "b": [
+          {
+            "t": "p",
+            "x": "Les informations du site sont données à titre indicatif et ne remplacent pas une consultation. Elles ne constituent pas un avis médical. En cas d'urgence, contactez le 15 (SAMU) ou le 3114 (numéro national de prévention du suicide)."
+          }
+        ]
+      }
+    ]
+  }
+}

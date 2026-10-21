@@ -1,0 +1,80 @@
+{
+  "name": "Mickaëlle Vallé",
+  "title": "Psychomotricienne et psychologue clinicienne",
+  "tagline": "Psychomotricité, sensori-motricité et psychologie à Paris",
+  "phone": "06 81 89 29 40",
+  "phoneHref": "+33681892940",
+  "email": "valle.micka@gmail.com",
+  "doctolib": "https://www.doctolib.fr/psychologue/paris/mickaelle-valle",
+  "rpps": "1007274060",
+  "adeli": "759378474",
+  "hours": [
+    "Mercredi : toute la journée",
+    "Vendredi : après-midi",
+    "Samedi : après-midi (médiations de groupe TDAH / TSA)"
+  ],
+  "places": [
+    {
+      "id": "moulinet",
+      "name": "Ancien cabinet Colibri",
+      "street": "20 rue du Moulinet",
+      "city": "75013 Paris",
+      "mapQuery": "20 rue du Moulinet, 75013 Paris",
+      "access": {
+        "metro": "À compléter",
+        "bus": "À compléter",
+        "pmr": "À compléter"
+      },
+      "note": "Lieu d'exercice historique, ouvert depuis 2013.",
+      "hours": [],
+      "tagline": "Lieu d'exercice historique, ouvert depuis 2013"
+    },
+    {
+      "id": "riboulet",
+      "name": "MSP Riboulet",
+      "street": "8 place Pierre Riboulet",
+      "city": "75013 Paris",
+      "mapQuery": "8 place Pierre Riboulet, 75013 Paris",
+      "access": {
+        "metro": "À compléter",
+        "bus": "À compléter",
+        "pmr": "À compléter"
+      },
+      "note": "Maison de santé pluriprofessionnelle.",
+      "hours": [],
+      "tagline": "Maison de santé pluriprofessionnelle"
+    }
+  ],
+  "social": [
+    {
+      "label": "Doctolib",
+      "url": "https://www.doctolib.fr/psychologue/paris/mickaelle-valle"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Quels sont les horaires de consultation ?",
+      "a": "Les consultations ont lieu le mercredi toute la journée, le vendredi après-midi et le samedi après-midi pour les médiations de groupe TDAH / TSA."
+    },
+    {
+      "q": "Comment prendre rendez-vous ?",
+      "a": "Vous pouvez prendre rendez-vous en ligne sur Doctolib, ou me contacter par téléphone au 06 81 89 29 40 ou par email à valle.micka@gmail.com."
+    },
+    {
+      "q": "Faut-il une prescription médicale ?",
+      "a": "La prise en charge en psychomotricité se fait sur prescription médicale. Votre médecin vous prescrit une ordonnance pour un bilan psychomoteur, puis des séances si nécessaire."
+    },
+    {
+      "q": "Les séances sont-elles remboursées ?",
+      "a": "Les séances ne sont pas prises en charge par la CPAM. Un devis peut être adressé à votre mutuelle pour des soins spécifiques ou coûteux."
+    },
+    {
+      "q": "Où se déroulent les consultations ?",
+      "a": "Je reçois sur deux lieux à Paris : au 20 rue du Moulinet (75013) et à la MSP Riboulet. Les détails et plans d'accès sont sur la page Lieux."
+    },
+    {
+      "q": "À qui s'adressent les consultations ?",
+      "a": "Aux tout-petits et à leurs parents, aux enfants d'âge scolaire, aux adolescents et aux adultes."
+    }
+  ]
+}
