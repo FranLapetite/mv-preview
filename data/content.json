@@ -294,14 +294,17 @@
         "b": [
           {
             "t": "p",
-            "x": "Le site n'utilise aucun cookie publicitaire ni outil de mesure d'audience. Certains contenus sont fournis par des services tiers qui peuvent déposer leurs propres cookies et recevoir votre adresse IP :"
+            "x": "Le site n'utilise aucun cookie publicitaire ni outil de mesure d'audience. La police de caractères (Poppins, licence SIL Open Font) est hébergée sur ce site : aucune donnée n'est transmise à Google pour l'afficher."
+          },
+          {
+            "t": "p",
+            "x": "Deux services tiers peuvent déposer leurs propres cookies et recevoir votre adresse IP, uniquement à votre initiative :"
           },
           {
             "t": "ul",
             "x": [
-              "Google Maps : cartes de la page Lieux.",
-              "Google Fonts : police de caractères du site.",
-              "Doctolib : prise de rendez-vous, sur le site de Doctolib après un clic."
+              "Google Maps : les cartes de la page Lieux ne se chargent qu'après votre clic sur « Afficher la carte ». Les liens « Itinéraire » ouvrent Google Maps dans un nouvel onglet.",
+              "Doctolib : la prise de rendez-vous se fait sur le site de Doctolib, après un clic."
             ]
           }
         ]

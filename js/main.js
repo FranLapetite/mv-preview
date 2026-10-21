@@ -118,7 +118,7 @@ const R = {
       ? `<ul class="hours">${p.hours.map(h => `<li><span>${esc(h.day)}</span><span>${esc(h.time)}</span></li>`).join('')}</ul>`
       : `<p>${todo('Horaires à compléter')}</p>`;
     const row = (p, i) => `<section class="${i % 2 ? 'alt ' : ''}place-row"><div class="wrap place-grid${i % 2 ? ' flip' : ''}">
-      <iframe class="map reveal" loading="lazy" title="Plan : ${esc(p.name)}" src="${mapSrc(p.mapQuery)}"></iframe>
+      <div class="map map-consent reveal" data-src="${mapSrc(p.mapQuery)}" data-title="Plan : ${esc(p.name)}"><p>Cette carte est fournie par Google Maps. En l'affichant, vous acceptez que Google dépose des cookies et reçoive votre adresse IP.</p><button class="btn" type="button">Afficher la carte</button></div>
       <div class="place-info reveal"><span class="kicker">Lieu ${i + 1}</span><h2>${esc(p.name)}</h2><p class="place-tag">${esc(p.tagline)}</p>
         <p class="place-addr">${todo(p.street)}<br>${esc(p.city)}</p>
         <div class="place-cols"><div><h3>Horaires</h3>${hours(p)}</div>
@@ -192,6 +192,14 @@ const R = {
 };
 
 function setup() {
+  document.querySelectorAll('.map-consent').forEach(box => {
+    box.querySelector('button').onclick = () => {
+      const f = document.createElement('iframe');
+      f.className = 'map'; f.title = box.dataset.title; f.src = box.dataset.src;
+      f.referrerPolicy = 'no-referrer-when-downgrade';
+      box.replaceWith(f);
+    };
+  });
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   const hv=$('.hero-video');if(hv&&matchMedia('(prefers-reduced-motion:reduce)').matches){hv.pause();hv.removeAttribute('autoplay')}
