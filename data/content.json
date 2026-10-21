@@ -303,7 +303,7 @@
           {
             "t": "ul",
             "x": [
-              "Google Maps : les cartes de la page Lieux ne se chargent qu'après votre clic sur « Afficher la carte ». Les liens « Itinéraire » ouvrent Google Maps dans un nouvel onglet.",
+              "Google Maps : à l'ouverture de la page Lieux, une fenêtre vous demande si vous acceptez l'affichage des cartes. Votre choix est conservé 6 mois sur votre appareil et modifiable à tout moment depuis cette page. Sans accord, aucune connexion à Google n'est établie. Les liens « Itinéraire » ouvrent Google Maps dans un nouvel onglet.",
               "Doctolib : la prise de rendez-vous se fait sur le site de Doctolib, après un clic."
             ]
           }

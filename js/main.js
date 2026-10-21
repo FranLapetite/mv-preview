@@ -118,12 +118,12 @@ const R = {
       ? `<ul class="hours">${p.hours.map(h => `<li><span>${esc(h.day)}</span><span>${esc(h.time)}</span></li>`).join('')}</ul>`
       : `<p>${todo('Horaires à compléter')}</p>`;
     const row = (p, i) => `<section class="${i % 2 ? 'alt ' : ''}place-row"><div class="wrap place-grid${i % 2 ? ' flip' : ''}">
-      <div class="map map-consent reveal" data-src="${mapSrc(p.mapQuery)}" data-title="Plan : ${esc(p.name)}"><p>Cette carte est fournie par Google Maps. En l'affichant, vous acceptez que Google dépose des cookies et reçoive votre adresse IP.</p><button class="btn" type="button">Afficher la carte</button></div>
+      <div class="map map-consent reveal" data-src="${mapSrc(p.mapQuery)}" data-title="Plan : ${esc(p.name)}"><p>Carte Google Maps masquée</p><button class="btn" type="button" data-act="allow">Afficher la carte</button><a class="maplink" href="${route(p)}" target="_blank" rel="noopener">Ouvrir dans Google Maps</a></div>
       <div class="place-info reveal"><span class="kicker">Lieu ${i + 1}</span><h2>${esc(p.name)}</h2><p class="place-tag">${esc(p.tagline)}</p>
         <p class="place-addr">${todo(p.street)}<br>${esc(p.city)}</p>
         <div class="place-cols"><div><h3>Horaires</h3>${hours(p)}</div>
         <div><h3>Accès</h3><dl class="access"><dt>Métro</dt><dd>${todo(p.access.metro)}</dd><dt>Bus</dt><dd>${todo(p.access.bus)}</dd><dt>Accessibilité</dt><dd>${todo(p.access.pmr)}</dd></dl></div></div>
-        <div class="btn-row"><a class="btn" href="${route(p)}" target="_blank" rel="noopener">Itinéraire</a><a class="btn" href="${site.doctolib}" target="_blank" rel="noopener">Prendre rendez-vous</a></div></div></div></section>`;
+        <div class="btn-row"><a class="btn" href="${route(p)}" target="_blank" rel="noopener">Itinéraire</a><a class="btn" href="${site.doctolib}" target="_blank" rel="noopener">Prendre rendez-vous</a></div></div></div>${i === site.places.length - 1 ? `<div class="wrap consent-foot"><p class="notice">Cartes Google Maps : <button class="linkbtn" type="button" data-act="change-choice">modifier mon choix</button></p></div>` : ''}</section>`;
     $('#main').innerHTML = `<div class="page-head"><div class="wrap"><h1>Mes deux lieux</h1><p class="lead">Je reçois à Paris 13e, sur deux lieux. Les jours de consultation sont les mêmes, le lieu est précisé lors de la prise de rendez-vous.</p>
       <ul class="tags">${site.hours.map(h => `<li>${esc(h)}</li>`).join('')}</ul></div></div>${site.places.map(row).join('')}`;
   },
@@ -191,15 +191,38 @@ const R = {
   }
 };
 
-function setup() {
+const CONSENT_KEY = 'mv-maps-consent', CONSENT_DAYS = 180;
+function getConsent() {
+  try { const v = JSON.parse(localStorage.getItem(CONSENT_KEY)); if (v && Date.now() - v.t < CONSENT_DAYS * 864e5) return v.c; } catch (e) {}
+  return null;
+}
+function setConsent(c) { try { localStorage.setItem(CONSENT_KEY, JSON.stringify({ c, t: Date.now() })); } catch (e) {} }
+function loadMaps() {
   document.querySelectorAll('.map-consent').forEach(box => {
-    box.querySelector('button').onclick = () => {
-      const f = document.createElement('iframe');
-      f.className = 'map'; f.title = box.dataset.title; f.src = box.dataset.src;
-      f.referrerPolicy = 'no-referrer-when-downgrade';
-      box.replaceWith(f);
-    };
+    const f = document.createElement('iframe');
+    f.className = 'map'; f.title = box.dataset.title; f.src = box.dataset.src; f.referrerPolicy = 'no-referrer-when-downgrade';
+    box.replaceWith(f);
   });
+}
+function initMaps() {
+  const boxes = document.querySelectorAll('.map-consent');
+  const again = document.querySelector('[data-act="change-choice"]');
+  if (again) again.onclick = () => { try { localStorage.removeItem(CONSENT_KEY); } catch (e) {} location.reload(); };
+  if (!boxes.length) return;
+  const state = getConsent();
+  if (state === 'yes') { loadMaps(); return; }
+  boxes.forEach(b => b.querySelector('[data-act="allow"]').onclick = () => { setConsent('yes'); loadMaps(); document.querySelector('.consent')?.remove(); });
+  if (state === 'no') return;
+  const el = document.createElement('div');
+  el.className = 'consent'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', 'Cartes Google Maps');
+  el.innerHTML = `<p><strong>Cartes Google Maps</strong><br>Cette page peut afficher des cartes Google Maps. Google pourrait alors déposer des cookies et recevoir votre adresse IP. Acceptez-vous leur affichage ?</p><div class="consent-btns"><button class="btn" type="button" data-c="yes">Accepter</button><button class="btn" type="button" data-c="no">Refuser</button></div>`;
+  el.querySelector('[data-c="yes"]').onclick = () => { setConsent('yes'); loadMaps(); el.remove(); };
+  el.querySelector('[data-c="no"]').onclick = () => { setConsent('no'); el.remove(); };
+  document.body.appendChild(el);
+}
+
+function setup() {
+  initMaps();
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   const hv=$('.hero-video');if(hv&&matchMedia('(prefers-reduced-motion:reduce)').matches){hv.pause();hv.removeAttribute('autoplay')}
